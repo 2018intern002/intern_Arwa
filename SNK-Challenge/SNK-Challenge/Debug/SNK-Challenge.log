@@ -1,0 +1,6 @@
+﻿  AllCommands.cpp
+c:\users\intern02\source\repos\snk-challenge\snk-challenge\allcommands.cpp(33): warning C4018: '<': signed/unsigned mismatch
+  SNK-Challenge.cpp
+c:\users\intern02\source\repos\snk-challenge\snk-challenge\snk-challenge.cpp(61): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  SNK-Challenge.vcxproj -> C:\Users\intern02\source\repos\SNK-Challenge\Debug\SNK-Challenge.exe

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:mx="http://schemas.microsoft.com/appx/2013/xbox/manifest" IgnorableNamespaces="mx">
+  <Identity Name="UE4Game" Publisher="CN=NoPublisher" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>ms-resource:PackageDisplayName</DisplayName>
+    <PublisherDisplayName>ms-resource:PublisherDisplayName</PublisherDisplayName>
+    <Description>ms-resource:PackageDescription</Description>
+    <Logo>Resources\Logo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+    <mx:OSName>era</mx:OSName>
+    <mx:ApplicationEnvironment>title</mx:ApplicationEnvironment>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="en" />
+    <Resource Language="ja-JP" />
+    <Resource Language="en-US" />
+  </Resources>
+  <Applications>
+    <Application Id="AppUE4Game" Executable="Onion\Binaries\XboxOne\Game.exe" EntryPoint="UE4Game.app">
+      <VisualElements DisplayName="ms-resource:AppDisplayName" Description="ms-resource:AppDescription" ForegroundText="dark" BackgroundColor="#000040" Logo="Resources\Logo.png" SmallLogo="Resources\SmallLogo.png">
+        <DefaultTile WideLogo="Resources\WideLogo.png" />
+        <SplashScreen BackgroundColor="#000040" Image="Resources\SplashScreen.png" />
+      </VisualElements>
+      <Extensions>
+        <mx:Extension Category="xbox.live">
+          <mx:XboxLive TitleId="0B140FE2" PrimaryServiceConfigId="9c610100-ea94-464b-8b1e-22740b140fe2" />
+        </mx:Extension>
+        <mx:Extension Category="xbox.system.resources">
+          <mx:XboxSystemResources resourceConfiguration="extended">
+            <mx:GpuAvailability>variable</mx:GpuAvailability>
+          </mx:XboxSystemResources>
+        </mx:Extension>
+        <mx:Extension Category="windows.xbox.networking">
+          <mx:XboxNetworkingManifest>
+            <mx:SocketDescriptions>
+              <mx:SocketDescription Name="WwiseDiscoverySocket" SecureIpProtocol="Udp" BoundPort="24024">
+                <mx:AllowedUsages>
+                  <mx:SecureDeviceSocketUsage Type="Initiate" />
+                  <mx:SecureDeviceSocketUsage Type="Accept" />
+                  <mx:SecureDeviceSocketUsage Type="SendDebug" />
+                  <mx:SecureDeviceSocketUsage Type="ReceiveDebug" />
+                </mx:AllowedUsages>
+              </mx:SocketDescription>
+              <mx:SocketDescription Name="WwiseCommandSocket" SecureIpProtocol="Tcp" BoundPort="24025">
+                <mx:AllowedUsages>
+                  <mx:SecureDeviceSocketUsage Type="Initiate" />
+                  <mx:SecureDeviceSocketUsage Type="Accept" />
+                  <mx:SecureDeviceSocketUsage Type="SendDebug" />
+                  <mx:SecureDeviceSocketUsage Type="ReceiveDebug" />
+                </mx:AllowedUsages>
+              </mx:SocketDescription>
+              <mx:SocketDescription Name="WwiseNotificationSocket" SecureIpProtocol="Tcp" BoundPort="24026">
+                <mx:AllowedUsages>
+                  <mx:SecureDeviceSocketUsage Type="Initiate" />
+                  <mx:SecureDeviceSocketUsage Type="Accept" />
+                  <mx:SecureDeviceSocketUsage Type="SendDebug" />
+                  <mx:SecureDeviceSocketUsage Type="ReceiveDebug" />
+                </mx:AllowedUsages>
+              </mx:SocketDescription>
+            </mx:SocketDescriptions>
+            <mx:SecureDeviceAssociationTemplates>
+              <mx:SecureDeviceAssociationTemplate Name="WwiseDiscovery" InitiatorSocketDescription="WwiseDiscoverySocket" AcceptorSocketDescription="WwiseDiscoverySocket" MultiplayerSessionRequirement="None">
+                <mx:AllowedUsages>
+                  <mx:SecureDeviceAssociationUsage Type="Default" />
+                </mx:AllowedUsages>
+              </mx:SecureDeviceAssociationTemplate>
+              <mx:SecureDeviceAssociationTemplate Name="WwiseCommand" InitiatorSocketDescription="WwiseCommandSocket" AcceptorSocketDescription="WwiseCommandSocket" MultiplayerSessionRequirement="None">
+                <mx:AllowedUsages>
+                  <mx:SecureDeviceAssociationUsage Type="Default" />
+                </mx:AllowedUsages>
+              </mx:SecureDeviceAssociationTemplate>
+              <mx:SecureDeviceAssociationTemplate Name="WwiseNotification" InitiatorSocketDescription="WwiseNotificationSocket" AcceptorSocketDescription="WwiseNotificationSocket" MultiplayerSessionRequirement="None">
+                <mx:AllowedUsages>
+                  <mx:SecureDeviceAssociationUsage Type="Default" />
+                </mx:AllowedUsages>
+              </mx:SecureDeviceAssociationTemplate>
+            </mx:SecureDeviceAssociationTemplates>
+          </mx:XboxNetworkingManifest>
+        </mx:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClientServer" />
+  </Capabilities>
+  <Extensions>
+    <mx:PackageExtension Category="xbox.store">
+      <mx:XboxStore>
+        <mx:TrialLicense SuspendOptOut="true" />
+      </mx:XboxStore>
+    </mx:PackageExtension>
+  </Extensions>
+</Package>

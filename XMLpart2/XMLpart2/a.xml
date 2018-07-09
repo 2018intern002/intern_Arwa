@@ -1,0 +1,12 @@
+  <Properties>
+  <DisplayName>ms-resource:PackageDisplayName</DisplayName> 
+  <PublisherDisplayName>ms-resource:PublisherDisplayName</PublisherDisplayName> 
+  <Description>ms-resource:PackageDescription</Description> 
+  <Logo>Resources\Logo.png</Logo> 
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+    <mx:OSName>era</mx:OSName>
+    <mx:ApplicationEnvironment>title</mx:ApplicationEnvironment>
+  </Prerequisites>

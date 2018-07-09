@@ -1,0 +1,9 @@
+﻿  Programming Task.cpp
+c:\users\intern02\source\repos\programming task\programming task\programming task.cpp(46): warning C4018: '<': signed/unsigned mismatch
+c:\users\intern02\source\repos\programming task\programming task\programming task.cpp(48): warning C4018: '<': signed/unsigned mismatch
+c:\users\intern02\source\repos\programming task\programming task\programming task.cpp(62): warning C4018: '<': signed/unsigned mismatch
+c:\users\intern02\source\repos\programming task\programming task\programming task.cpp(101): warning C4018: '<': signed/unsigned mismatch
+c:\users\intern02\source\repos\programming task\programming task\programming task.cpp(111): warning C4018: '<': signed/unsigned mismatch
+c:\users\intern02\source\repos\programming task\programming task\programming task.cpp(22): warning C4715: 'operation': not all control paths return a value
+c:\users\intern02\source\repos\programming task\programming task\programming task.cpp(87): warning C4715: 'convertToString': not all control paths return a value
+  Programming Task.vcxproj -> C:\Users\intern02\source\repos\Programming Task\Debug\Programming Task.exe

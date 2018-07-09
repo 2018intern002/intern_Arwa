@@ -1,0 +1,35 @@
+    <MESSAGE ID="SUPER_SPECIAL_USE_COUNT">
+      <DATA KEY="excel_original">
+        <TEXT>超必殺技、EX超必殺技使用回数</TEXT>
+      </DATA>
+      <DATA KEY="ja">
+        <TEXT>超必殺技、EX超必殺技使用回数</TEXT>
+      </DATA>
+      <DATA KEY="en">
+        <TEXT>Super/EX Super Specials Used</TEXT>
+      </DATA>
+      <DATA KEY="zhCN">
+        <TEXT>超必?技/EX超必?技使用数</TEXT>
+      </DATA>
+      <DATA KEY="zhTW">
+        <TEXT>超必殺技、EX超必殺技使用次數</TEXT>
+      </DATA>
+      <DATA KEY="ko">
+        <TEXT>????&#44; EX ???? ?? ??</TEXT>
+      </DATA>
+      <DATA KEY="fr">
+        <TEXT>Mouvements Super/EX Super Speciaux utilises</TEXT>
+      </DATA>
+      <DATA KEY="it">
+        <TEXT>Tecniche Super/EX Super usate</TEXT>
+      </DATA>
+      <DATA KEY="de">
+        <TEXT>Super/EX Super Special Moves verwendet</TEXT>
+      </DATA>
+      <DATA KEY="es">
+        <TEXT>Super/ Super Especial EX usados</TEXT>
+      </DATA>
+      <DATA KEY="font">
+        <TEXT>マティス </TEXT>
+      </DATA>
+    </MESSAGE>
